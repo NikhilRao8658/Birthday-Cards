@@ -1,0 +1,117 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Body Styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, rgb(39, 195, 226), #086d8f);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Title Styling */
+#Heading-1 {
+  font-size: 2rem;
+  color: #eae204;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Stylish shadow for effect */
+  margin-bottom: 20px;
+}
+
+/* Container for Cards */
+#Birth-Cards-P {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Strong shadow for depth */
+  width: 100%;
+  max-width: 600px; /* Fit content neatly */
+  backdrop-filter: blur(10px); /* Modern blur effect */
+}
+
+/* Card Container */
+#Birth-Cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Individual Card Styling */
+.card {
+  background: linear-gradient(145deg, #4ae1ff, #7a66ff); /* Vibrant gradient for cards */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Clean shadow */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #1111dd;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image Styling */
+#imagesB {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff; /* White border to pop the image */
+}
+
+/* Name and Age Styling */
+#ruby1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+rt {
+  font-size: 1rem;
+  color: #ffe; /* Soft yellow for age */
+}
+
+/* Date of Birth Styling */
+#dob {
+  font-size: 0.9rem;
+  color: #ffe;
+}
+
+/* Clear All Button Styling */
+#clear-all {
+  background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Gradient button */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+
+#clear-all:hover {
+  background: linear-gradient(145deg, #feb47b, #ff7e5f); /* Hover gradient reverse */
+  transform: scale(1.05); /* Slight grow on hover */
+}
