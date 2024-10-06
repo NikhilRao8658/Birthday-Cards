@@ -5,7 +5,8 @@ export default function Birthday() {
 
     useEffect(() => {
         let api = axios.get('http://localhost:9090/BirthData');
-        api.then(values => setdate(values.data));
+        api.then(values => setdate(values.data))
+        .catch((e)=> console.error(e))
     }, []);
 
     let ClearAll = () => {
